@@ -1,0 +1,28 @@
+{
+  "data" :[
+  {
+    "type": "fruit",
+    "name": "apple",
+    "number": "2",
+    "entryTime": "2020-10-4"
+  },
+  {
+    "type": "fruit",
+    "name": "banana",
+    "number": "3",
+    "entryTime": "2020-9-4"
+  },
+  {
+    "type": "vegetable",
+    "name": "tomato",
+    "number": "1",
+    "entryTime": "2020-9-4"
+  },
+  {
+    "type": "vegetable",
+    "name": "potato",
+    "number": "3",
+    "entryTime": "2020-4-4"
+  }
+]
+}
