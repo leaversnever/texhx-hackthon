@@ -29,6 +29,23 @@
     flex: 1;
 }
 
-.FoodDetail {
-    display: none;
+.FoodsDetail {
+    display: flex;
+
+}
+
+.Blank {
+    flex : 1
+}
+.FoodName {
+    flex : 2
+}
+
+.FoodHealth {
+    flex : 10
+}
+
+#FoodImg {
+    width: 100px;
+    height: 100px;
 }

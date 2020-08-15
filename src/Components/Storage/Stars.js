@@ -1,13 +1,14 @@
 import React, {useState} from 'react';
-import { FaBeer } from 'react-icons/fa';
+import { AiFillStar } from 'react-icons/ai';
 
 export default function Stars( {number} ){
     return (
         <div>
-            <FaBeer />
-            <FaBeer />
-            <FaBeer />
-            <FaBeer />
+            <AiFillStar color={(number>0?"black":"white")} />
+            <AiFillStar color={(number>1?"black":"white")} />
+            <AiFillStar color={(number>2?"black":"white")} />
+            <AiFillStar color={(number>3?"black":"white")} />
+            <AiFillStar color={(number>4?"black":"white")} />
         </div>
     )
 }

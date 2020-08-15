@@ -6,6 +6,12 @@ import AccordionSummary from '@material-ui/core/AccordionSummary';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import health from '../../Data/health.json';
+import Stars from './Stars';
+import {AiFillApple} from 'react-icons/ai';
+import apple from '../../Icon/apple.png';
+import banana from '../../Icon/banana.png';
+import egg from '../../Icon/egg.png';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -41,13 +47,44 @@ export default function ControlledAccordions({data, i}) {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography className={classes.heading}>{data.name}</Typography>
-          <Typography className={classes.secondaryHeading}>Number : {data.number} Data : {data.entryTime}</Typography>
+          <Typography className={classes.heading}><b>{data.name}</b> &times; {data.number}</Typography>
+          <Typography className={classes.secondaryHeading } style={{color: "black"}}>Data : {data.entryTime}</Typography>
         </AccordionSummary>
-        <AccordionDetails id="DetailDisplay">
-          <Typography >
-            {data.name} 's description!<br />
-          </Typography>
+        <AccordionDetails id="DetailDisplay" >
+          <div className="FoodsDetail">
+            <div>
+            <br /><br />
+            </div>
+            <div className="FoodName"> 
+              Vitamins:<br /><br />
+              Carbohydrates:<br /><br />
+              Calories:<br /><br />
+            </div>
+            <div className="FoodHealth">
+                <Stars number={data.vitamins}/><br />
+                <Stars number={data.carbohydrates}/><br />
+                <Stars number={data.calories}/><br />
+            </div>
+            <div>
+            <br /><br />  
+            </div>
+            <div>
+            <br /><br />
+            </div>
+            <div className="FoodName">
+              {
+                console.log("../../Icon/"+data.name+".png")
+              }
+              <img src={require('../../Icon/'+data.name+'.png')} id="FoodImg" />
+            </div>
+          </div>
+            
+
+                
+
+
+              
+
         </AccordionDetails>
       </Accordion>
 
